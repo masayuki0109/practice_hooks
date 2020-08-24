@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       <h1>{count}</h1>
-      <Button onClick={onClickCallback} />
+      <Button onClick={onClickCallback}>キャッシュされたボタン</Button>
+      <Button onClick={() => console.log('clicked')}>キャッシュされてないボタン</Button>
       {/* Appを再レンダリングするために、countをインクリメントするためのボタン */}
       <button
         onClick={() => {
